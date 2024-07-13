@@ -14,17 +14,17 @@ const ProductDetail = () => {
     const fetchProduct = async () => {
       try {
         const res = await axios.get(`http://localhost:8888/products/${id}`);
-        console.log('API Response:', res.data); // Debug: Log the API response
+        console.log("API Response:", res.data); // Debug: Log the API response
         setProduct(res.data);
       } catch (err) {
-        console.log('API Error:', err); // Debug: Log any errors from the API call
+        console.log("API Error:", err); // Debug: Log any errors from the API call
       }
     };
     fetchProduct();
   }, [id]);
 
   if (!product) {
-    console.log('Product is null'); // Debug: Log when product is null
+    console.log("Product is null"); // Debug: Log when product is null
     return <div>Loading...</div>;
   }
 
@@ -36,11 +36,7 @@ const ProductDetail = () => {
           <div className="detail">
             <div className="product-details">
               <div className="product-image">
-                <img
-                  src={`http://localhost:8888${product.image}`}
-                  alt={product.name}
-                  className="oxbar-image"
-                />
+                <img src={`http://localhost:8888${product.image}`} alt={product.name} className="oxbar-image" />
               </div>
               <div className="product-info">
                 <h2>{product.name}</h2>
@@ -67,22 +63,22 @@ const ProductDetail = () => {
               <div className="review">
                 <div className="rating">5/5</div>
                 <img className="star" src="../public/img/star.png" alt="star" />
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec laoreet justo, et eleifend leo.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Doneca nec laoreet justo, et eleifend leo.</p>
               </div>
               <div className="review">
                 <div className="rating">5/5</div>
                 <img className="star" src="../../public/img/star.png" alt="star" />
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec laoreet justo, et eleifend leo.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Doneca nec laoreet justo, et eleifend leo.</p>
               </div>
               <div className="review">
                 <div className="rating">5/5</div>
                 <img className="star" src="../../public/img/star.png" alt="star" />
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec laoreet justo, et eleifend leo.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Doneca nec laoreet justo, et eleifend leo.</p>
               </div>
               <div className="review">
                 <div className="rating">5/5</div>
                 <img className="star" src="../../public/img/star.png" alt="star" />
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec laoreet justo, et eleifend leo.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Doneca nec laoreet justo, et eleifend leo.</p>
               </div>
             </div>
           </div>
@@ -93,36 +89,24 @@ const ProductDetail = () => {
             <h2>More Like This</h2>
             <div className="products">
               <div className="product">
-                <button className="product-link" onClick={() => window.location.href='#'}>
-                  <img
-                    src="../../public/img/foom2.png"
-                    alt="Oxbar Mini apple pear"
-                    className="product-image"
-                  />
+                <button className="product-link" onClick={() => (window.location.href = "#")}>
+                  <img src="../../public/img/foom2.png" alt="Oxbar Mini apple pear" className="product-image" />
                 </button>
                 <h3>Oxbar Mini apple pear</h3>
                 <img className="ratings" src="../../public/img/bintang.png" alt="star1" />
                 <div className="price">Rp. 59.000</div>
               </div>
               <div className="product">
-                <button className="product-link" onClick={() => window.location.href='#'}>
-                  <img
-                    src="../../public/img/cart10.png"
-                    alt="WOVICA soMatch Mini Device"
-                    className="product-image"
-                  />
+                <button className="product-link" onClick={() => (window.location.href = "#")}>
+                  <img src="../../public/img/cart10.png" alt="WOVICA soMatch Mini Device" className="product-image" />
                 </button>
                 <h3>WOVICA soMatch Mini Device</h3>
                 <img className="ratings" src="../../public/img/bintang.png" alt="star1" />
                 <div className="price">Rp. 50.000</div>
               </div>
               <div className="product">
-                <button className="product-link" onClick={() => window.location.href='#'}>
-                  <img
-                    src="../../public/img/image_21.png"
-                    alt="Dinner Lady Banana Ice"
-                    className="product-image"
-                  />
+                <button className="product-link" onClick={() => (window.location.href = "#")}>
+                  <img src="../../public/img/image_21.png" alt="Dinner Lady Banana Ice" className="product-image" />
                 </button>
                 <h3>Dinner Lady Banana Ice</h3>
                 <img className="ratings" src="/img/bintang.png" alt="star1" />
