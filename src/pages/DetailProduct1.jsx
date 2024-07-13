@@ -78,7 +78,7 @@ const ProductDetail = () => {
               <div className="review">
                 <div className="rating">5/5</div>
                 <img className="star" src="../../public/img/star.png" alt="star" />
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Doneca nec laoreet justo, et eleifend leo.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Doneca neca laoreet justo, et eleifend leo.</p>
               </div>
             </div>
           </div>
